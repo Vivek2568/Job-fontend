@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          <img src="/JobZee-logos__white.png" alt="logo" />
+          <img src="https://t4.ftcdn.net/jpg/03/15/06/25/240_F_315062590_0bc6WQC5qFlA5V16RDfTHRvDJ176VaiM.jpg" alt="logo" />
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>

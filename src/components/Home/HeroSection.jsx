@@ -36,19 +36,19 @@ const HeroSection = () => {
             <h1>Find a job that suits</h1>
             <h1>your interests and skills</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+              Discover a fulfilling career that aligns with your passions and expertise,
+              where you can leverage your unique talents to make a meaningful
+              impact and achieve personal and professional growth!.
             </p>
           </div>
           <div className="image">
-            <img src="/heroS.jpg" alt="hero" />
+            <img src="https://img.freepik.com/premium-vector/job-vacancy-vector-illustration-with-showing-human-resources-selecting-prospective-employees_675567-1942.jpg?w=900" alt="hero" />
           </div>
         </div>
         <div className="details">
           {details.map((element) => {
             return (
-              <div className="card" key={element.id}>
+              <div className="card rounded-sm" key={element.id}>
                 <div className="icon">{element.icon}</div>
                 <div className="content">
                   <p>{element.title}</p>

@@ -43,7 +43,6 @@ const MyJobs = () => {
     setEditingMode(null);
   };
 
-  //Function For Updating The Job
   const handleUpdateJob = async (jobId) => {
     const updatedJob = myJobs.find((job) => job._id === jobId);
     await axios
@@ -58,8 +57,6 @@ const MyJobs = () => {
         toast.error(error.response.data.message);
       });
   };
-
-  //Function For Deleting Job
   const handleDeleteJob = async (jobId) => {
     await axios
       .delete(`http://localhost:4000/api/v1/job/delete/${jobId}`, {
@@ -75,7 +72,6 @@ const MyJobs = () => {
   };
 
   const handleInputChange = (jobId, field, value) => {
-    // Update the job object in the jobs state with the new value
     setMyJobs((prevJobs) =>
       prevJobs.map((job) =>
         job._id === jobId ? { ...job, [field]: value } : job
