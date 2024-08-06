@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://job-backend-egc0.onrender.com/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {
@@ -53,7 +53,7 @@ const Register = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="https://t4.ftcdn.net/jpg/03/15/06/25/240_F_315062590_0bc6WQC5qFlA5V16RDfTHRvDJ176VaiM.jpg" alt="logo" />
+            <img src="./logo.jpeg" alt="logo" />
             <h3>Create a new account</h3>
           </div>
           <form>

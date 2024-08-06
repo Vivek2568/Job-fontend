@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/login",
+        "https://job-backend-egc0.onrender.com/api/v1/user/login",
         { email, password, role },
         {
           headers: {
@@ -46,7 +46,7 @@ const Login = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="https://t4.ftcdn.net/jpg/03/15/06/25/240_F_315062590_0bc6WQC5qFlA5V16RDfTHRvDJ176VaiM.jpg" alt="logo" />
+            <img src="./logo.jpeg" alt="logo" />
             <h3>Login to your account</h3>
           </div>
           <form>

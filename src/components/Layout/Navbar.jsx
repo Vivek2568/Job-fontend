@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/user/logout",
+        "https://job-backend-egc0.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
         }
@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          <img src="https://t4.ftcdn.net/jpg/03/15/06/25/240_F_315062590_0bc6WQC5qFlA5V16RDfTHRvDJ176VaiM.jpg" alt="logo" />
+          <img src="./logo.jpeg" alt="logo" />
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>

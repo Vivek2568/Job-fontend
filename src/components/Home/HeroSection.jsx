@@ -16,6 +16,7 @@ const HeroSection = () => {
       title: "91220",
       subTitle: "Companies",
       icon: <FaBuilding />,
+      url: "https://japan-dev.com/companies"
     },
     {
       id: 3,
@@ -28,6 +29,7 @@ const HeroSection = () => {
       title: "1,03,761",
       subTitle: "Employers",
       icon: <FaUserPlus />,
+      url:"https://japan-dev.com/hire"
     },
   ];
   return (
@@ -50,7 +52,7 @@ const HeroSection = () => {
         <div className="details">
           {details.map((element) => {
             return (
-              <Link to={element.url}>
+              <Link to={element.url} target="_blank">
                 <div className="card rounded-sm" key={element.id}>
                   <div className="icon">{element.icon}</div>
                   <div className="content">
