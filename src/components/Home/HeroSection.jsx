@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBuilding, FaSuitcase, FaUsers, FaUserPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const details = [
@@ -8,6 +9,7 @@ const HeroSection = () => {
       title: "1,23,441",
       subTitle: "Live Job",
       icon: <FaSuitcase />,
+      url:"https://www.linkedin.com/jobs/"
     },
     {
       id: 2,
@@ -48,13 +50,14 @@ const HeroSection = () => {
         <div className="details">
           {details.map((element) => {
             return (
-              <div className="card rounded-sm" key={element.id}>
-                <div className="icon">{element.icon}</div>
-                <div className="content">
-                  <p>{element.title}</p>
-                  <p>{element.subTitle}</p>
-                </div>
-              </div>
+              <Link to={element.url}>
+                <div className="card rounded-sm" key={element.id}>
+                  <div className="icon">{element.icon}</div>
+                  <div className="content">
+                    <p>{element.title}</p>
+                    <p>{element.subTitle}</p>
+                  </div>
+                </div></Link>
             );
           })}
         </div>

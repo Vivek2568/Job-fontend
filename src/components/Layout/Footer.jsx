@@ -8,18 +8,18 @@ const Footer = () => {
   const { isAuthorized } = useContext(Context);
   return (
     <footer className={isAuthorized ? "footerShow" : "footerHide"}>
-      <div>&copy; All Rights Reserved By VIVEK&CO.</div>
+      <div>&copy; All Rights Reserved By VIVEK & CO.</div>
       <div>
-        <Link to={""} target="_blank">
+        <Link to={"https://www.facebook.com/profile.php?id=100013694975944"} target="_blank">
           <FaFacebookF />
         </Link>
-        <Link to={""} target="_blank">
+        <Link to={"https://www.youtube.com/@vivekprajapati6238"} target="_blank">
           <FaYoutube />
         </Link>
-        <Link to={""} target="_blank">
+        <Link to={"https://www.linkedin.com/in/vivek-prajapati-82b09825b/"} target="_blank">
           <FaLinkedin />
         </Link>
-        <Link to={""} target="_blank">
+        <Link to={"https://www.instagram.com/25vivek68/"} target="_blank">
           <RiInstagramFill />
         </Link>
       </div>
