@@ -8,7 +8,7 @@ import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Context } from "../../main";
-
+import { useNavigate } from "react-router-dom";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -31,6 +31,7 @@ const Register = () => {
           withCredentials: true,
         }
       );
+      console.log(data);
       toast.success(data.message);
       setName("");
       setEmail("");
@@ -43,8 +44,8 @@ const Register = () => {
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={'/'}/>
+  if (isAuthorized) {
+    return <Navigate to={"/"}/>
   }
 
 
